@@ -1,0 +1,153 @@
+body {
+    font: 15px/20px Arial, sans-serif;  
+    background: #333;
+    margin:0px;
+    color:#333;
+    min-height:100%;
+}
+
+
+.header {
+    text-align:center;
+    position:fixed;
+    height:30px;
+    left:0px;
+    right:0px;
+    background:#FFF;
+    padding:25px 0px 5px 0px;
+    border-bottom:5px solid #CCC;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.content {  
+    position:fixed;
+    top:62px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:scroll;
+    -webkit-overflow-scrolling:touch;
+    margin-bottom:30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  perspective: 1000px;
+}
+
+#carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  background: #000;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  background: #ed1c24;
+}
+.b {
+  transform: rotateY(90deg) translateZ(250px);
+  background: #0072bc;
+}
+.c {
+  transform: rotateY(180deg) translateZ(250px);
+  background: #39b54a;
+}
+.d {
+  transform: rotateY(270deg) translateZ(250px);
+  background: #f26522;
+}
+
+
+
+.card {
+    background:#FFF;
+    border:1px solid #AAA;
+    border-bottom:3px solid #BBB;
+    padding:0px;
+    margin:15px;
+    overflow:hidden;
+}
+
+.card h1 {
+    margin:0px;
+    padding:10px;
+    padding-bottom:0px;
+}
+
+.card p {
+    margin:0px;
+    padding:10px;
+}
+
+.card-image {
+    width:100%;
+    height:200px;
+    padding:0px;
+    margin:0px;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+
+.card-image .banner {
+    height:50px;
+    width:50px;
+    top:0px;
+    right:0px;
+    background-position:top right;
+    background-repeat:no-repeat;
+    position:absolute;
+}
+
+.card-image h1, 
+.card-image h2, 
+.card-image h3, 
+.card-image h4, 
+.card-image h5, 
+.card-image h6 {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    color:white;
+    background:rgba(0,0,0,0.65);
+    margin:0px;
+    padding:6px;
+    border:none;
+}
+
+
+.image1 {
+    background-image:url('../images/f1.jpg');
+}
+
+.image2 {
+    background-image:url('../images/f2.jpg');
+}
+
+.image3 {
+    background-image:url('../images/f3.jpg');
+}
+
+.image4 {
+    background-image:url('../images/f4.jpg');
+}
+
+
